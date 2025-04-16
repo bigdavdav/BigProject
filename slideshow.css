@@ -1,0 +1,36 @@
+#product-card {
+  max-width: 100vw;
+
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  position: absolute;
+  z-index: 1;
+
+  width: 100vw;
+  padding: 32px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  font-size: 32px;
+
+  border: none;
+  background: none;
+  color: var(--neutral-400);
+
+  transition: color, font-size 0.2s;
+}
+
+.button-container button:hover {
+  font-size: 60px;
+  color: var(--neutral-100);
+}
+
+.slideshow-container img {
+  max-width: 100vw;
+}
