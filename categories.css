@@ -1,5 +1,22 @@
 #products-section {
-  overflow: hidden;
+  padding: 32px;
+}
+
+.products-container {
+  display: flex;
+  gap: 64px;
+}
+
+.item-container {
+  margin-top: 16px;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
   background: black;
-  padding: 20px;
+}
+
+.item-container h3 {
+  margin-top: 16px;
 }

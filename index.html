@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="hero.css">
@@ -23,24 +24,30 @@
   </header>
 
   <div id="product-hero">
-    <div id="button-container">
-      <button id="left-button">&lt;</button>
-      <button id="right-button">&gt;</button>
-    </div>
+    <button id="left-button">&lt;</button>
 
-    <div class="image-container">
-      <img src="./Assets/Home/1.jpg">
+    <div class="hero-image-container">
+      <img src="./Assets/Home/1.jpg" />
     </div>
-    <div class="image-container hidden">
+    <div class="hero-image-container hidden">
       <img src="./Assets/Home/2.jpg">
     </div>
-    <div class="image-container hidden">
+    <div class="hero-image-container hidden">
       <img src="./Assets/Home/3.jpg">
     </div>
+
+    <button id="right-button">&gt;</button>
   </div>
 
   <main id="products-section">
+    <h1>Whats popular:</h1>
 
+    <div class="products-container">
+      <div class="item-container">
+        <div class="product-image"></div>
+        <h3>Item</h3>
+      </div>
+    </div>
   </main>
   
   <script src="slideshow.js"></script>
