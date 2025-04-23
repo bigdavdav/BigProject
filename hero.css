@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.button-container {
+#button-container {
   position: absolute;
   z-index: 1;
 
@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-.button-container button {
+#button-container button {
   font-size: 32px;
 
   border: none;
@@ -26,13 +26,14 @@
   transition: color, font-size 0.2s;
 }
 
-.button-container button:hover {
+#button-container button:hover {
   font-size: 60px;
   color: var(--neutral-100);
 }
 
 .image-container img {
   width: 100vw;
+  overflow: hidden;
 }
 
 .hidden {
