@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="categories.css">
+  <link rel="stylesheet" href="productCategories.css">
 
   <title>Adiddy's official website</title>
 </head>
@@ -24,7 +24,7 @@
   </header>
 
   <div id="product-hero">
-    <button id="left-button">&lt;</button>
+    <button id="left-hero-button">&lt;</button>
 
     <div class="hero-image-container">
       <img src="./Assets/Home/1.jpg" />
@@ -36,12 +36,14 @@
       <img src="./Assets/Home/3.jpg">
     </div>
 
-    <button id="right-button">&gt;</button>
+    <button id="right-hero-button">&gt;</button>
   </div>
 
-  <main id="products-section">
+  <main class="products-section">
     <h1>Whats popular:</h1>
 
+    <button class="left-category-button">&lt;</button>
+    
     <div class="products-container">
       <a class="item-container" href="#">
         <div class="product-image"></div>
@@ -84,8 +86,23 @@
         <h3>Item</h3>
       </a>
     </div>
+
+    <button class="right-category-button">&gt;</button>
   </main>
+
+  <!--
+    Global classes for categories:
+      
+      .products-section   = a section for displaying products in a certain category(e.g. trending, recommended for you)
+      .products-container = a section where all the product boxes will be placed.
+      .item-container     = a section where the item image and name will be placed
+      .product-image      = defines the properties for the image
+
+      These should be used in any page or area that includes a section for displaying products.
+      Those pages should also be linked to productCategories.css and productCategories.js
+  -->
   
   <script src="hero.js"></script>
+  <script src="productCategories.js"></script>
 </body>
 </html>

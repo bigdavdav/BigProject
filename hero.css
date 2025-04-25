@@ -8,7 +8,7 @@
 
 #product-hero button {
   font-size: 32px;
-  padding: 0 32px;
+  margin: 0 32px;
   position: absolute;
 
   border: none;
@@ -18,7 +18,7 @@
   transition: color, font-size 0.2s;
 }
 
-#product-hero button#right-button {
+#product-hero button#right-hero-button {
   right: 0;
 }
 

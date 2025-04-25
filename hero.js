@@ -6,8 +6,8 @@ const heroImagesArray = []
 
 let i = 0 // place in the array when looping it
 
-const leftArrow = document.getElementById("left-button")
-const rightArrow = document.getElementById("right-button")
+const leftArrow = document.getElementById("left-hero-button")
+const rightArrow = document.getElementById("right-hero-button")
 
 // --------------------------- Functions -------------------------------
 
