@@ -1,20 +1,23 @@
 #products-section {
   padding: 32px;
+  overflow: scroll;
 }
 
 .products-container {
   display: flex;
-  gap: 64px;
+  gap: 48px;
 }
 
 .item-container {
   margin-top: 16px;
+  color: var(--black);
 }
 
 .product-image {
   width: 150px;
   height: 150px;
   background: black;
+  border-radius: 8px;
 }
 
 .item-container h3 {

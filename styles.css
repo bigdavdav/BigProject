@@ -1,21 +1,15 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 :root {
-  --indigo-50:  oklch(.962 .018 272.314);
-  --indigo-100: oklch(.93 .034 272.788);
-  --indigo-200: oklch(.87 .065 274.039);
-  --indigo-300: oklch(.785 .115 274.713);
-  --indigo-400: oklch(.673 .182 276.935);
-  --indigo-500: oklch(.585 .233 277.117);
-  --indigo-600: oklch(.511 .262 276.966);
-  --indigo-700: oklch(.457 .24 277.023);
-  --indigo-800: oklch(.398 .195 277.366);
-  --indigo-900: oklch(.359 .144 278.697);
-  --indigo-950: oklch(.257 .09 281.288);
+  --indigo-50:   oklch(.962 .018 272.314);
+  --indigo-100:  oklch(.93 .034 272.788);
+  --indigo-200:  oklch(.87 .065 274.039);
+  --indigo-300:  oklch(.785 .115 274.713);
+  --indigo-400:  oklch(.673 .182 276.935);
+  --indigo-500:  oklch(.585 .233 277.117);
+  --indigo-600:  oklch(.511 .262 276.966);
+  --indigo-700:  oklch(.457 .24 277.023);
+  --indigo-800:  oklch(.398 .195 277.366);
+  --indigo-900:  oklch(.359 .144 278.697);
+  --indigo-950:  oklch(.257 .09 281.288);
 
   --neutral-50:  oklch(.985 0 0);
   --neutral-100: oklch(.97 0 0);
@@ -34,8 +28,9 @@
 }
 
 a {
-  text-decoration: none;
   color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
 
   transition: color 0.2s;
 }

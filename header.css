@@ -1,8 +1,8 @@
 header {
   height: 50px;
-  background-color: var(--neutral-800);
-
   padding: 0 32px;
+  
+  background-color: var(--neutral-800);
 
   display: flex;
   justify-content: space-between;
