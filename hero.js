@@ -41,7 +41,7 @@ function imageSwitchBackwards() {
   }
 }
 
-const interval = setInterval(cycleArray, 5000)
+const interval = setInterval(cycleArray, 2000)
 
 // ------------ Creating interval for image switching -----------------
 
