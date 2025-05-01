@@ -1,11 +1,12 @@
 .products-section {
-  padding: 32px;
+  padding: 96px 32px 32px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .products-container {
+  margin-top: 32px;
   display: flex;
   gap: 48px;
 }
@@ -16,9 +17,12 @@
 }
 
 .product-image {
+  padding: 30px;
   width: 300px;
-  height: 500px;
-  background: black;
+  height: 300px;
+  
+  object-fit: contain;
+  background: var(--neutral-100);
   border-radius: 8px;
 }
 

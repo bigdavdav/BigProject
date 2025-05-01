@@ -38,3 +38,7 @@ a {
 a:hover {
   color: var(--indigo-500);
 }
+
+h1 {
+  font-size: 32px;
+}
