@@ -1,0 +1,43 @@
+footer {
+  height: 700px;
+  padding: 160px 230px 0;
+
+  color: var(--white);
+  background-color: var(--neutral-800);
+}
+
+footer .social-links  h2{
+  margin-bottom: 16px;
+}
+
+footer .social-links a {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50px;
+
+  display: inline-flex;
+  justify-content: center;
+
+  transition: background 0.2s;
+}
+
+footer .social-links a:hover {
+  background: var(--neutral-500);
+  color: var(--black);
+}
+
+footer .social-links a + a {
+  margin-left: 16px;
+}
+
+footer h3 {
+  margin-top: 16px;
+}
+
+footer h3 > a {
+  color: var(--indigo-400);
+}
+
+footer h3 > a:hover {
+  color: var(--indigo-200);
+}

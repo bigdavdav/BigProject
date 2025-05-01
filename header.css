@@ -9,7 +9,7 @@ header {
   align-items: center;
 }
 
-nav {
+header > nav {
   display: flex;
   gap: 16px;
 }

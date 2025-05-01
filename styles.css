@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: var(--indigo-500);
+  color: var(--indigo-300);
 }
 
 h1 {
