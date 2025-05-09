@@ -12,6 +12,7 @@ const rightArrow = document.getElementById("right-hero-button")
 for ( let i = 0; i < amountOfImages; i++ ) {
   heroImagesArray.push(heroImages[i])
 }
+
 // --------------------------- Functions -------------------------------
 
 function cycleArray() {

@@ -49,7 +49,9 @@
   border: none;
   outline: none;
   border-radius: 50px;
+
   text-align: center;
+  cursor: pointer;
 
   transition: background 0.2s;
 }

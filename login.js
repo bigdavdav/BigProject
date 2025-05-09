@@ -25,10 +25,8 @@ function formValidation(event) {
   for ( i = 0; i < users.length; i++ ) {
     if ( userEmail != users[i].userEmail ) {
       console.log("L")
-      return null
     } else if ( userPassword != users[i].userPassword ) {
       console.log("L")
-      return null
     } else {
       console.log("W")
       return("yay")
@@ -42,6 +40,4 @@ function formValidation(event) {
 
 
 
-submitButton.addEventListener('click', () => {
-  let successful = formValidation
-})
+submitButton.addEventListener('click', formValidation)
