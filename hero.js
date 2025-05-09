@@ -9,6 +9,9 @@ let i = 0 // place in the array when looping it
 const leftArrow = document.getElementById("left-hero-button")
 const rightArrow = document.getElementById("right-hero-button")
 
+for ( let i = 0; i < amountOfImages; i++ ) {
+  heroImagesArray.push(heroImages[i])
+}
 // --------------------------- Functions -------------------------------
 
 function cycleArray() {
@@ -40,14 +43,9 @@ function imageSwitchBackwards() {
     heroImagesArray[i + 1].classList.toggle("hidden")
   }
 }
-
-const interval = setInterval(cycleArray, 2000)
-
 // ------------ Creating interval for image switching -----------------
 
-for ( let i = 0; i < amountOfImages; i++ ) {
-  heroImagesArray.push(heroImages[i])
-}
+const interval = setInterval(cycleArray, 2000)
 
 // ---------------- Adding function to the buttons --------------------
 

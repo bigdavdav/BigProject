@@ -1,3 +1,5 @@
+// ---------------------- Fetching users --------------------------
+
 let users = []
 
 fetch('./users.json')
@@ -8,4 +10,38 @@ fetch('./users.json')
     });
   })
 
+  
+// ------------------ Setting Form Variables ----------------------
+  
+const submitButton = document.getElementById('submit-button')
+  
+// -------------------- Creating Validation -----------------------
 console.log(users)
+  
+function formValidation(event) {
+  const userEmail = document.getElementById('user-email').value
+  const userPassword = document.getElementById('password').value
+    
+  for ( i = 0; i < users.length; i++ ) {
+    if ( userEmail != users[i].userEmail ) {
+      console.log("L")
+      return null
+    } else if ( userPassword != users[i].userPassword ) {
+      console.log("L")
+      return null
+    } else {
+      console.log("W")
+      return("yay")
+    }
+  }
+
+  event.preventDefault()
+}
+
+//setcustomvalidity
+
+
+
+submitButton.addEventListener('click', () => {
+  let successful = formValidation
+})
