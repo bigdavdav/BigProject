@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="productCategories.css">
+  <link rel="stylesheet" href="productPages.css">
   <link rel="stylesheet" href="footer.css">
 
   <!-- Title -->
@@ -55,73 +55,51 @@
     <button id="right-hero-button">&gt;</button>
   </div>
 
-  <section class="products-section">
-    <h1>Whats popular:</h1>
-
-    <div class="products-container">
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-        <h3>Item</h3>
-      </a>
-    </div>
-  </section>
-
-  <section class="products-section">
-    <h1>Brand New Deals:</h1>
-
-    <div class="products-container">
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/plx-500-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/plx-500-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/plx-500-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/plx-500-1.png"></img>
-        <h3>Item</h3>
-      </a>
-    </div>
-  </section>
-
-  <section class="products-section">
-    <h1>The Best From Pioneer:</h1>
-
-    <div class="products-container">
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/DJM-A9-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/DJM-A9-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/DJM-A9-1.png"></img>
-        <h3>Item</h3>
-      </a>
-      <a class="item-container" href="#">
-        <img class="product-image" src="Assets/ProductImages/DJM-A9-1.png"></img>
-        <h3>Item</h3>
-      </a>
-    </div>
+  <section id="app">
+    <div id="app-container">
+      <aside>
+        <h1>Product types:</h1>
+  
+        <button class="category-button selected">All</button>
+        <button class="category-button">DJ Players/Turntables</button>
+        <button class="category-button">DJ Mixers</button>
+        <button class="category-button">All In One Systems</button>
+        <button class="category-button">DJ Controllers</button>
+        <button class="category-button">Headphones</button>
+        <button class="category-button">Speakers</button>
+        <button class="category-button">Accessories</button>
+      </aside>
+      <main>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>Player</h3>
+          </a>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>Mixer</h3>
+          </a>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>All In One System</h3>
+          </a>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>Controller</h3>
+          </a>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>Headphones</h3>
+          </a>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>Speakers</h3>
+          </a>
+          <a class="item-container" href="#">
+            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
+            <h3>Accessory</h3>
+          </a>
+        </main>
+      </div>
   </section>
 
   <footer>
@@ -148,5 +126,6 @@
   -->
   
   <script src="hero.js"></script>
+  <script src="productFilter.js"></script>
 </body>
 </html>
