@@ -24,26 +24,23 @@
 
 #app-container aside button {
   width: 75%;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   display: block;
-  cursor: pointer;
-
-  background: 0;
+  
   border: 0;
-  border-color: rgba(0, 0, 0, 0);
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  
+  background: 0;
+  cursor: pointer;
 
   transition: border-color 0.2s;
 }
 
 #app-container aside button.selected {
-  margin-bottom: 29px;
-  border-bottom: 3px solid;
   border-color: var(--black);
 }
 
 #app-container aside button:hover {
-  margin-bottom: 29px;
-  border-bottom: 3px solid;
   border-color: var(--neutral-500);
 }
 
