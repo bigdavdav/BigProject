@@ -11,24 +11,20 @@ function handleChangingFilter(targetButton) {
   targetButton.classList.toggle("selected")
 }
 
-function findingClassFilterFromButton(classList) {
-  for ( i = 0;  i < classList.length; i++ ) {
-    if ( classList[i] != "category-button" && classList[i] != "selected" ) {
-      return classList[i]
-    } else if ( typeof(classList[i] != "category-button" && classList[i] != "selected") != "stringzs" ) {
-      return "all"
-    }
-  }
-}
-
 function handleApplyingFilter(targetButton) {
   const productsList = document.getElementsByClassName("item-container")
-  const buttonClass = findingClassFilterFromButton(targetButton.classList)
-  
-  console.log(buttonClass)
+  const buttonClass = targetButton.classList[1]
   
   for ( let i = 0; i < productsList.length; i++ ) {
-    console.log(productsList[i].classList)
+    productClass = productsList[i].classList
+
+    if ( productClass.contains("hidden")  ) {
+      productClass.toggle("hidden")
+    }
+
+    if ( !productClass.contains(buttonClass) && buttonClass != "all" ) {
+      productClass.toggle("hidden")
+    } 
   }
 }
 

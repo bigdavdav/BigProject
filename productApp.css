@@ -71,3 +71,7 @@
 .item-container h3 {
   margin-top: 16px;
 }
+
+.hidden {
+  display: none;
+}
