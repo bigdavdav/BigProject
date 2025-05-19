@@ -1,5 +1,3 @@
-// ---------------------- Fetching users --------------------------
-
 let users = []
 
 fetch('./users.json')
