@@ -32,12 +32,39 @@
     <form id="sign-up-form">
       <h1>Sign Up</h1>
 
-      <input id="user-name" type="text" placeholder="User Name">
-      <input id="user-email" type="text" placeholder="Email">
-      <input id="password" type="text" placeholder="Password">
+      <input 
+        name="userName"
+        id="user-name"
+        type="text"
+        placeholder="User Name"
+        minlength="4"
+        autocomplete="off"
+        required
+      />
+      <input 
+        name="userEmail"
+        id="user-email" 
+        placeholder="E-Mail" 
+        type="email" 
+        autocomplete="off" 
+        required
+      />
+      <input
+        name="userPassword"
+        id="password"
+        placeholder="Password"
+        type="text"
+        minlength="6"
+        autocomplete="off"
+        required 
+      />
+
+      <p id="dbCheckMessage" class="hidden">Account already exists.</p>
 
       <button id="submit-button" type="submit">Sign Up</button>
     </form>
   </div>
+
+  <script src="userValidation.js"></script>
 </body>
 </html>

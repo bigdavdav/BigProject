@@ -29,16 +29,33 @@
 </head>
 <body>
   <div id="form-container">
-    <form id="sign-up-form">
+    <form id="login-form" onsubmit="dbLoginDetailValidation()">
       <h1>Log In</h1>
 
-      <input id="user-email" placeholder="E-Mail" type="email" required>
-      <input id="password" placeholder="Password" type="text" minlength="8" required>
+      <input 
+        name="userEmail"
+        id="user-email" 
+        placeholder="E-Mail" 
+        type="email" 
+        autocomplete="off" 
+        required
+      />
+      <input
+        name="userPassword"
+        id="password"
+        placeholder="Password"
+        type="text"
+        minlength="6"
+        autocomplete="off"
+        required 
+      />
+
+      <p id="dbCheckMessage" class="hidden">Account not found.</p>
 
       <button id="submit-button" type="submit">Log In</button>
     </form>
   </div>
 
-  <script src="login.js"></script>
+  <script src="userValidation.js"></script>
 </body>
 </html>

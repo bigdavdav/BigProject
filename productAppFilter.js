@@ -16,7 +16,7 @@ function handleApplyingFilter(targetButton) {
   const buttonClass = targetButton.classList[1]
   
   for ( let i = 0; i < productsList.length; i++ ) {
-    productClass = productsList[i].classList
+    const productClass = productsList[i].classList
 
     if ( productClass.contains("hidden")  ) {
       productClass.toggle("hidden")
