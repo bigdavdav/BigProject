@@ -11,9 +11,16 @@
 }
 
 #form-container form {
+  padding: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  color: var(--white);
+
+  border: 3px solid var(--black);
+  border-radius: 8px;
+  background-color: var(--black-alpha);
 }
 
 #form-container form  h1 {
@@ -67,4 +74,16 @@
 
 #submit-button:hover {
   background: var(--indigo-400);
+}
+
+#switch-page-message {
+  margin-top: 16px;
+}
+
+#switch-page-message a {
+  color: var(--indigo-400);
+}
+
+#switch-page-message a:hover {
+  color: var(--indigo-200);
 }
