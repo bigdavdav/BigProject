@@ -1,5 +1,15 @@
 let users = []
 
+const fs = require('fs')
+
+fs.readFile('users.json', 'utf8', (err, data) => {
+  if (err) {
+    console.log(err)
+    return
+  }
+  console.log(data)
+})
+
 fetch("./users.json")
   .then(response => response.json())
   .then(data => {
@@ -20,6 +30,7 @@ const dbUserCheck = document.getElementById("dbCheckMessage")
 const submitButton = document.getElementById("submit-button")
   
 // ---------------- Creating DB User Functions --------------------
+// Not Functioning
 
 function dbAddUser(name, email, password) {
   const userData = new Object({
@@ -59,8 +70,6 @@ function dbLoginDetailValidation() {
 
   event.preventDefault()
 }
-
-
 
 signUpForm.addEventListener("submit", () => {
   const userNameInput = userName.value

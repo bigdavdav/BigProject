@@ -1,5 +1,5 @@
 header {
-  height: 50px;
+  height: 75px;
   padding: 0 32px;
   
   background-color: var(--neutral-800);
@@ -7,6 +7,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header img {
+  height: 50px;
 }
 
 header > nav {
