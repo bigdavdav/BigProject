@@ -1,15 +1,15 @@
-#app {
+#product-search {
   padding: 64px;
   display: flex;
   justify-content: center;
 }
 
-#app-container {
+#product-search-container {
   display: grid;
   grid-template-columns: 300px 1fr;
 }
 
-#app-container aside {
+#product-search-container aside {
   padding: 32px;
   border-right: 2px solid var(--neutral-700);
 
@@ -18,11 +18,11 @@
   align-items: center;
 }
 
-#app-container h1 {
+#product-search-container h1 {
   margin-bottom: 16px;
 }
 
-#app-container aside button {
+#product-search-container aside button {
   width: 75%;
   margin-bottom: 29px;
   display: block;
@@ -36,16 +36,16 @@
   transition: border-color 0.2s;
 }
 
-#app-container aside button.selected {
+#product-search-container aside button.selected {
   border-color: var(--black);
 }
 
-#app-container aside button:hover {
+#product-search-container aside button:hover {
   border-color: var(--neutral-500);
 }
 
 
-#app-container main {
+#product-search-container main {
   padding: 48px;
 
   display: grid;
