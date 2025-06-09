@@ -17,8 +17,6 @@ footer .social-links a {
 
   display: inline-flex;
   justify-content: center;
-
-  transition: background 0.2s;
 }
 
 footer .social-links a:hover {

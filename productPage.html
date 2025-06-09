@@ -43,31 +43,41 @@
       <a href="equipment.html">Equipment</a>
       <a href="courses.html">Courses</a>
       <a href="contact.html">Contact Us</a>
+      <a href="#" id="cart">
+        <i class="ph ph-shopping-cart"></i>
+        <span class="items-in-cart">0</span>
+      </a>
       <a href="login.html">Log In</a>
     </nav>
   </header>
 
   <main id="product-display">
     <div id="image-list-container">
-      <div id="image-list-item">
+      <div class="image-list-item selected">
         <img src="./Assets/ProductImages/CDJ-3000-1.png" />
       </div>
-      <div id="image-list-item">
+      <div class="image-list-item">
         <img src="./Assets/ProductImages/CDJ-3000-2.png" />
       </div>
-      <div id="image-list-item">
+      <div class="image-list-item">
         <img src="./Assets/ProductImages/CDJ-3000-3.png" />
       </div>
-      <div id="image-list-item">
+      <div class="image-list-item">
         <img src="./Assets/ProductImages/CDJ-3000-4.png" />
       </div>
     </div>
+
     <div id="display-image-container">
-      <img src="./Assets/ProductImages/CDJ-3000-1.png" />
+      <img id="main-display-image" src="./Assets/ProductImages/CDJ-3000-1.png" />
       <div id="info-container">
         <h1>Pioneer DJ CDJ-3000</h1>
+
+        <input id="item-amount" type="number" min="1" value="1" disabled>
+        <button id="minus-button">&#8722;</button>
+        <button id="plus-button">&#43;</button>
+
         <h3>&#163;2,149.00</h3>
-        <button>Ali to cart</button>
+        <button id="add-to-cart-button">Add to cart</button>
       </div>
     </div>
   </main>
@@ -86,43 +96,55 @@
     <div id="info-key-features">
       <h2>Key features</h2>
   
-      <h3>Next-Generation Performance with Advanced MPU</h3>
-      <ul>
-        <li>Equipped with a multi-core micro-processing unit (MPU), the CDJ-3000 delivers smoother, faster operation.</li>
-        <li>Drastically improved track loading, waveform rendering, and browsing speeds.</li>
-      </ul>
+      <div class="key-feature">
+        <h3>Next-Generation Performance with Advanced MPU</h3>
+        <ul>
+          <li>Equipped with a multi-core micro-processing unit (MPU), the CDJ-3000 delivers smoother, faster operation.</li>
+          <li>Drastically improved track loading, waveform rendering, and browsing speeds.</li>
+        </ul>
+      </div>
   
-      <h3>9-Inch High-Resolution Touchscreen</h3>
-      <ul>
-        <li>Link up to six CDJ-3000 units via Ethernet using Pro DJ Link.</li>
-        <li>Supports ClouliirectPlay with rekordbox, allowing DJs to access their entire music library stored in the cloud.</li>
-      </ul>
+      <div class="key-feature">
+        <h3>9-Inch High-Resolution Touchscreen</h3>
+        <ul>
+          <li>Link up to six CDJ-3000 units via Ethernet using Pro DJ Link.</li>
+          <li>Supports ClouliirectPlay with rekordbox, allowing DJs to access their entire music library stored in the cloud.</li>
+        </ul>
+      </div>
   
-      <h3>Pro DJ Link with Cloud Integration</h3>
-      <ul>
-        <li>Link up to six CDJ-3000 units via Ethernet using Pro DJ Link.</li>
-        <li>Supports CloudDirectPlay with rekordbox, allowing DJs to access their entire music library stored in the cloud.</li>
-        <li>Compatible with USB drives, SD cards, and external devices.</li>
-      </ul>
+      <div class="key-feature">
+        <h3>Pro DJ Link with Cloud Integration</h3>
+        <ul>
+          <li>Link up to six CDJ-3000 units via Ethernet using Pro DJ Link.</li>
+          <li>Supports CloudDirectPlay with rekordbox, allowing DJs to access their entire music library stored in the cloud.</li>
+          <li>Compatible with USB drives, SD cards, and external devices.</li>
+        </ul>
+      </div>
   
-      <h3>Unmatched Audio Fidelity</h3>
-      <ul>
-        <li>96kHz/32-bit float DAC for pristine audio quality.</li>
-        <li>Enhanced digital signal processing and low-jitter clock ensure crystal-clear playback, even in the loudest environments.</li>
-      </ul>
+      <div class="key-feature">
+        <h3>Unmatched Audio Fidelity</h3>
+        <ul>
+          <li>96kHz/32-bit float DAC for pristine audio quality.</li>
+          <li>Enhanced digital signal processing and low-jitter clock ensure crystal-clear playback, even in the loudest environments.</li>
+        </ul>
+      </div>
   
-      <h3>Redesigned Jog Wheel</h3>
-      <ul>
-        <li>Smooth, reinforced jog wheel with reduced latency and customizable tension.</li>
-        <li>Central LCD display shows artwork and playhead position.</li>
-      </ul>
+      <div class="key-feature">
+        <h3>Redesigned Jog Wheel</h3>
+        <ul>
+          <li>Smooth, reinforced jog wheel with reduced latency and customizable tension.</li>
+          <li>Central LCD display shows artwork and playhead position.</li>
+        </ul>
+      </div>
   
-      <h3>Expanded Creative Tools</h3>
-      <ul>
-        <li>8 Hot Cue buttons placed horizontally below the screen for quick access.</li>
-        <li>Beat Jump, Beat Loop, and Slip Loop modes for intuitive live remixing.</li>
-        <li>Key Sync and Key Shift features to match harmonic key across tracks effortlessly.</li>
-      </ul>
+      <div class="key-feature">
+        <h3>Expanded Creative Tools</h3>
+        <ul>
+          <li>8 Hot Cue buttons placed horizontally below the screen for quick access.</li>
+          <li>Beat Jump, Beat Loop, and Slip Loop modes for intuitive live remixing.</li>
+          <li>Key Sync and Key Shift features to match harmonic key across tracks effortlessly.</li>
+        </ul>
+      </div>
     </div>
 
     <div id="info-tech-specs">
@@ -138,7 +160,7 @@
       </ul>
     </div>
 
-    <div id="info-included-in-boxgh">
+    <div id="info-included-in-box">
       <h1>What's in the box</h1>
       <ul>
         <li>Pioneer DJ CDJ-3000 Multi Player</li>
@@ -174,5 +196,7 @@
       These should be used in any page or area that includes a section for displaying products.
       Those pages should also be linked to productCategories.css and productCategories.js
   -->
+
+  <script src="productPage.js"></script>
 </body>
 </html>
