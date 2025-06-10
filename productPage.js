@@ -1,5 +1,7 @@
 import { getCookieValue, setCookie } from "./cookieFunctions.js"
 
+id 
+const produto = get 
 // ------------------ Setting Variables ----------------------
 
 // image list
@@ -52,12 +54,15 @@ function addToCart(productName, productPrice, amountOfItemsToAdd) {
   let cartList = JSON.parse(getCookieValue("cartList"))
   const productExists = findingExistingProductListing(cartList, productName)
 
+  produto
+
   if ( productExists != null ) {
     cartList[productExists].itemAmount = Number(cartList[productExists].itemAmount) + Number(amountOfItemsToAdd)
+    cartList[productExists].itemPrice = Number(cartList[productExists].itemAmount) + (Number(productPrice) * Number(amountOfItemsToAdd))
   } else {
     cartList.push({
       itemName: productName,
-      itemPrice: productPrice,
+      itemPrice: productPrice * amountOfItemsToAdd,
       itemAmount: amountOfItemsToAdd,
     },)
   }
@@ -65,7 +70,7 @@ function addToCart(productName, productPrice, amountOfItemsToAdd) {
   // adding items to cookies
   console.log(cartList)
   setCookie("cartList", JSON.stringify(cartList), 365)
-  window.location.replace("./orderPlaced.html");
+  window.location.replace("./addedToCart.html");
 }
 
 // ---------- Adding event listeners to buttons --------------
@@ -91,5 +96,5 @@ minusButton.addEventListener("click", () => {
 
 // add to cart button event listener
 addToCartButton.addEventListener("click", () => {
-  addToCart(itemName, itemPrice, amountInput.value)
+  addToCart()
 })

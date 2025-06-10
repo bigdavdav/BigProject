@@ -10,6 +10,7 @@
 #cart-table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 #cart-table thead {
@@ -30,22 +31,46 @@
   border-top-right-radius: 8px;
 }
 
-#cart-table thead th#table-item-name {
+#cart-table thead tr th#table-item-name {
   width: 60%;
 }
 
-#cart-table thead th#table-item-amount {
+#cart-table thead tr th#table-item-amount {
   width: 20%;
 }
 
-#cart-table thead th#table-item-price {
+#cart-table thead tr th#table-item-price {
   width: 20%;
+}
+
+#cart-table tbody tr:nth-child(even) {
+  background-color: var(--neutral-100);
 }
 
 #cart-table tbody tr td {
   padding: 16px;
 }
 
+
 #cart-table tbody tr td + td {
   border-left: 2px solid var(--black);
+}
+
+#total-text {
+  font-size: 24px
+}
+
+#total-amount {
+  font-weight: 600;
+}
+
+#purchase-button {
+  margin-top: 8px;
+  width: 150px;
+  height: 40px;
+}
+
+#cart-container p.empty-message {
+  margin: 64px;
+  text-align: center;
 }

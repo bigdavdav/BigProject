@@ -9,8 +9,13 @@
   margin-bottom: 32px;
 }
 
+#order-confirmation a:first-of-type{
+  margin-top: 16px;
+}
+
 #order-confirmation a{
   color: var(--black);
+  display: block;
 }
 
 #order-confirmation a:hover{
