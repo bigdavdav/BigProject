@@ -11,8 +11,6 @@
 .image-list-item {
   width: 100px;
   height: 100px;
-
-  cursor: pointer;
 }
 
 .image-list-item + .image-list-item {
@@ -30,7 +28,8 @@
   border-radius: 8px;
   background-color: var(--neutral-100);
   object-fit: contain;
-
+  cursor: pointer;
+  
   transition: background-color 0.2s;
 }
 

@@ -29,7 +29,6 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="hero.css">
   <link rel="stylesheet" href="productPage.css">
   <link rel="stylesheet" href="footer.css">
 
@@ -43,7 +42,7 @@
       <a href="equipment.html">Equipment</a>
       <a href="courses.html">Courses</a>
       <a href="contact.html">Contact Us</a>
-      <a href="#" id="cart">
+      <a href="cart.html" id="cart">
         <i class="ph ph-shopping-cart"></i>
         <span class="items-in-cart">0</span>
       </a>
@@ -70,13 +69,13 @@
     <div id="display-image-container">
       <img id="main-display-image" src="./Assets/ProductImages/CDJ-3000-1.png" />
       <div id="info-container">
-        <h1>Pioneer DJ CDJ-3000</h1>
+        <h1 id="item-name">Pioneer DJ CDJ-3000</h1>
 
-        <input id="item-amount" type="number" min="1" value="1" disabled>
+        <input id="item-amount" type="number" value="1" disabled>
         <button id="minus-button">&#8722;</button>
         <button id="plus-button">&#43;</button>
 
-        <h3>&#163;2,149.00</h3>
+        <h3 id="item-price">&#163;2,149.00</h3>
         <button id="add-to-cart-button">Add to cart</button>
       </div>
     </div>
@@ -197,6 +196,9 @@
       Those pages should also be linked to productCategories.css and productCategories.js
   -->
 
-  <script src="productPage.js"></script>
+  <script src="global.js" type="module"></script>
+  <script src="cookieFunctions.js" type="module"></script>
+
+  <script src="productPage.js" type="module"></script>
 </body>
 </html>

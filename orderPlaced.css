@@ -1,0 +1,18 @@
+#order-confirmation {
+  margin: 120px 60px;
+  text-align: center;
+}
+
+#order-confirmation h1 {
+  font-weight: 900;
+  font-size: 64px;
+  margin-bottom: 32px;
+}
+
+#order-confirmation a{
+  color: var(--black);
+}
+
+#order-confirmation a:hover{
+  color: var(--indigo-300);
+}
