@@ -1,5 +1,5 @@
 import { getCookieValue, setCookie } from "./cookieFunctions.js"
-import { equipmentProducts, getProduct } from "./products.js"
+import { getProduct } from "./products.js"
 
 // ------------------ Setting Variables ----------------------
 
@@ -32,22 +32,9 @@ const productInformation = document.getElementById('product-information')
 
 // --------------------- Functions ---------------------------
 
-function handleChangingImage(targetImage) {
-  const currentSelectedImage = document.getElementsByClassName("selected")[0]
-  
-  currentSelectedImage.classList.toggle("selected")
-  targetImage.classList.toggle("selected")
-}
-
-function handleApplyingImage(targetImageTag) {
-  const newImageURL = targetImageTag.getAttribute("src")
-  
-  mainDisplayImage.setAttribute("src", newImageURL)
-}
-
-function findingExistingProductListing(list, productName) {
+function findingExistingProductListing(list, id) {
   for ( let i = 0; i < list.length; i++ ) {
-    if ( list[i].itemName == productName ) {
+    if ( list[i].itemID == id ) {
       return i
     }
   }
@@ -55,10 +42,20 @@ function findingExistingProductListing(list, productName) {
   return null
 }
 
-function addToCart(productName, productPrice, amountOfItemsToAdd) {
+function addToCart(itemAmountToAdd, id) {
   // adding items to cart list
   let cartList = JSON.parse(getCookieValue("cartList"))
-  const productExists = findingExistingProductListing(cartList, productName)
+  const productExists = findingExistingProductListing(cartList, id)
+
+  if ( productExists != null ) {
+    const currentItemAmount = cartList[productExists].itemAmount
+    cartList[productExists].itemAmount = currentItemAmount + itemAmountToAdd
+  } else {
+    cartList.push({
+      itemID: id,
+      itemAmount: itemAmountToAdd
+    })
+  }
 
   // adding items to cookies
   console.log(cartList)
@@ -68,32 +65,23 @@ function addToCart(productName, productPrice, amountOfItemsToAdd) {
 
 // ---------- Adding event listeners to buttons --------------
 
-// // image list event listeners
-// for ( let i = 0; i < imageList.length; i++ ) {
-//   imageList[i].addEventListener("click", () => {
-//     handleChangingImage(event.target.parentElement)
-//     handleApplyingImage(event.target)
-//   })
-// }
+// item amount event listeners
+plusButton.addEventListener("click", () => {
+  amountInput.value = Number(amountInput.value) + 1 
+})
 
-// // item amount event listeners
-// plusButton.addEventListener("click", () => {
-//   amountInput.value = Number(amountInput.value) + 1 
-// })
+minusButton.addEventListener("click", () => {
+  if (Number(amountInput.value) > 1) {
+    amountInput.value = Number(amountInput.value) - 1 
+  }
+})
 
-// minusButton.addEventListener("click", () => {
-//   if (Number(amountInput.value) > 1) {
-//     amountInput.value = Number(amountInput.value) - 1 
-//   }
-// })
+// add to cart button event listener
+addToCartButton.addEventListener("click", () => {
+  addToCart(Number(amountInput.value), product.id)
+})
 
-// // add to cart button event listener
-// addToCartButton.addEventListener("click", () => {
-//   addToCart()
-// })
-
-
-// --------------------------------------------------
+// ------------------ Applying images ------------------------
 
 for ( let i = 0; i < imageListItems.length; i++ ) {
   let imageElement = document.createElement('img')
@@ -105,6 +93,8 @@ for ( let i = 0; i < imageListItems.length; i++ ) {
 mainDisplayImage.setAttribute('src', product.photos[0])
 itemNameElement.innerHTML = itemName
 itemPriceElement.innerHTML = itemPrice
+
+// ----------------- Adding description ---------------------
 
 product.description.map((item) => {
   let divContent = item.content

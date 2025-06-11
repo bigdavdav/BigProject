@@ -36,11 +36,15 @@
 }
 
 #cart-table thead tr th#table-item-amount {
-  width: 20%;
+  width: 15%;
 }
 
 #cart-table thead tr th#table-item-price {
   width: 20%;
+}
+
+#cart-table thead tr th#table-delete-item-placeholder {
+  width: 5%;
 }
 
 #cart-table tbody tr:nth-child(even) {
@@ -56,6 +60,23 @@
   border-left: 2px solid var(--black);
 }
 
+#cart-table tbody tr td:last-of-type button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart-table tbody tr td:last-of-type button:hover {
+  background-color: var(--red);
+}
+
+#cart-container p.empty-message {
+  margin: 64px;
+  text-align: center;
+}
+
 #total-text {
   font-size: 24px
 }
@@ -68,9 +89,4 @@
   margin-top: 8px;
   width: 150px;
   height: 40px;
-}
-
-#cart-container p.empty-message {
-  margin: 64px;
-  text-align: center;
 }

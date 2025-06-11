@@ -12,6 +12,7 @@ if ( getCookieValue("cartItems") == null ) {
 
 // getting the amount of items on the cart
 const cartList = JSON.parse(getCookieValue("cartList"))
+
 let totalAmountOfitems = 0
 
 if ( cartList.length != 0 ) {
