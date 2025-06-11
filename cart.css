@@ -90,3 +90,12 @@
   width: 150px;
   height: 40px;
 }
+
+#purchase-button:disabled {
+  cursor: not-allowed;
+  background-color: var(--indigo-600);
+}
+
+#purchase-button:disabled:hover {
+  background-color: var(--indigo-600);
+}

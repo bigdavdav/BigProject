@@ -1,4 +1,4 @@
-import { getCookieValue, setCookie } from "./cookieFunctions.js"
+import { getCookieValue, setCookie, deleteCookie } from "./cookieFunctions.js"
 import { getProduct } from "./products.js"
 
 // ----------------- Creating Variables ------------------------
@@ -68,6 +68,11 @@ function addItemsToTable(name, amount, price, tbody, id) {
   totalPrice += (Number(price) * Number(amount))
 }
 
+function completePurchase() {
+  deleteCookie("cartList")
+  window.location.href = "./orderPlaced.html"
+}
+
 // ------------- Adding Items to Cart Table --------------------
 
 if ( cartList.length == 0 ) {
@@ -77,6 +82,8 @@ if ( cartList.length == 0 ) {
   emptyMessage.classList.add("empty-message")
   emptyMessage.appendChild(emptyMessagetext)
   tableElement.after(emptyMessage)
+
+  purchaseButton.disabled = true
 } else {
   cartList.map((item) => {
     const product = getProduct(item.itemID)
@@ -97,4 +104,8 @@ Array.from(deleteButtons).map((button) => {
     const IDToDelete = button.getAttribute('name')
     deleteItemFromCart(Number(IDToDelete))
   })
+})
+
+purchaseButton.addEventListener("click", () => {
+  completePurchase()
 })

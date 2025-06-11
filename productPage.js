@@ -60,7 +60,7 @@ function addToCart(itemAmountToAdd, id) {
   // adding items to cookies
   console.log(cartList)
   setCookie("cartList", JSON.stringify(cartList), 365)
-  window.location.replace("./addedToCart.html");
+  window.location.href = "./addedToCart.html"
 }
 
 // ---------- Adding event listeners to buttons --------------
