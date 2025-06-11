@@ -134,7 +134,7 @@ export const equipmentProducts = [
         content: [
           {
             elementType: 'h1',
-            elementContent: `What's in the box'`
+            elementContent: `What's in the box`
           },
           {
             elementType: 'ul',
@@ -169,7 +169,7 @@ export const equipmentProducts = [
 // ---------------------- Functions --------------------------
 
 export function getProduct(id) {
-  return products.find(item => item.id === id)
+  return equipmentProducts.find(item => item.id === id)
 }
 
 // if (!produto) return erro.

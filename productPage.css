@@ -101,12 +101,10 @@
   margin-top: 32px;
 }
 
-#cart {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+#item-price {
+  font-size: 24px;
 }
 
-#cart i {
-  font-size: 16zpx;
+#item-price-span {
+  font-weight: 600;
 }
