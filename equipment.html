@@ -81,37 +81,9 @@
         <button class="category-button speaker">Speakers</button>
         <button class="category-button accessory">Accessories</button>
       </aside>
-      <main id="lista">
-          <a class="item-container player" href="productPage.html?product=1">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>Player</h3>
-          </a>
-          <a class="item-container mixer" href="#">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>Mixer</h3>
-          </a>
-          <a class="item-container all-in-one" href="#">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>All In One System</h3>
-          </a>
-          <a class="item-container controller" href="#">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>Controller</h3>
-          </a>
-          <a class="item-container headphone" href="#">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>Headphones</h3>
-          </a>
-          <a class="item-container speaker" href="#">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>Speakers</h3>
-          </a>
-          <a class="item-container accessory" href="#">
-            <img class="product-image" src="Assets/ProductImages/CDJ-3000-1.png"></img>
-            <h3>Accessory</h3>
-          </a>
-        </main>
-      </div>
+
+      <main></main>
+    </div>
   </section>
 
   <footer>
@@ -139,8 +111,17 @@
 
   <script src="global.js" type="module"></script>
   <script src="cookieFunctions.js" type="module"></script>
+  <script src="products.js" type="module"></script>
+  <script src="productItemDisplay.js" type="module"></script>
   
   <script src="hero.js"></script>
   <script src="productSearchFilter.js"></script>
+
+  <script type="module">
+    import { equipmentProducts } from './products.js'
+    import { listItems } from './productItemDisplay.js'
+
+    listItems(equipmentProducts)
+  </script>
 </body>
 </html>

@@ -1,7 +1,5 @@
 import { getCookieValue, setCookie } from "./cookieFunctions.js"
 
-id 
-const produto = get 
 // ------------------ Setting Variables ----------------------
 
 // image list

@@ -85,16 +85,20 @@
   margin: 0 128px 64px;
 }
 
-#info-intro, #info-key-features, #info-tech-specs, #info-included-in-box {
+#product-information #info-intro, #info-key-features, #info-tech-specs, #info-included-in-box {
   margin-bottom: 32px;
 }
 
-#product-information div > h1, h2 {
+#product-information div > h1 {
   margin-bottom: 16px;
 }
 
-.key-feature {
-  margin-bottom: 32px;
+#info-key-features h3:first-of-type {
+  margin-top: 16px;
+}
+
+#info-key-features ul + h3 {
+  margin-top: 32px;
 }
 
 #cart {
