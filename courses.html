@@ -82,7 +82,7 @@
         <button class="category-button accessory">Accessories</button>
       </aside>
 
-      <main></main>
+      <main id="main-container"></main>
     </div>
   </section>
 
@@ -121,7 +121,7 @@
     import { products } from './products.js'
     import { listItems } from './productItemDisplay.js'
 
-    listItems(products, true)
+    listItems("main-container", products, true)
   </script>
 </body>
 </html>
