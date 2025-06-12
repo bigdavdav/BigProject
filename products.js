@@ -313,6 +313,295 @@ export const products = [
       },
     ]
   },
+  {
+    id: 2,
+    name: 'Pioneer DJ PLX-500',
+    price: 315,
+    type: 'player',
+    digitalProduct: false,
+    photos: [
+      './Assets/ProductImages/PLX-500-1.png',
+      './Assets/ProductImages/PLX-500-2.png',
+      './Assets/ProductImages/PLX-500-3.png',
+      './Assets/ProductImages/PLX-500-4.png'
+    ],
+    description: [
+      {
+        divID: 'info-intro',
+        content: [
+          {
+            elementType: 'h1',
+            elementContent: 'Product Details'
+          },
+          {
+            elementType: 'p',
+            elementContent: `Bring the warmth of vinyl into your DJ setup or home listening space with the Pioneer DJ PLX-500, a high-quality direct drive turntable that blends analog tradition with digital convenience. Designed for DJs, music enthusiasts, and collectors, the PLX-500 offers rich sound reproduction, solid build quality, and a built-in USB output for easy digital archiving of your vinyl collection.`
+          },
+          {
+            elementType: 'p',
+            elementContent: `Whether you’re spinning records live or digitizing rare finds, the PLX-500 makes it effortless and enjoyable.`
+          },
+        ]
+      },
+      {
+        divID: 'info-key-features',
+        content: [
+          {
+            elementType: 'h2',
+            elementContent: 'Key features'
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Direct Drive Motor for Stable Playback'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `High-torque motor ensures consistent and accurate rotation, perfect for mixing or casual listening.`,
+              `Delivers quick start-up time and precise speed control.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: `High-Fidelity Analog Sound`
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Optimized sound routing minimizes distortion and delivers warm, true-to-source audio.`,
+              `Built-in phono equalizer allows for direct connection to powered speakers or audio systems — no external preamp required.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'USB Output for Vinyl Archiving'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Easily convert your vinyl to digital files using the built-in USB output and free rekordbox software.`,
+              `Plug directly into your PC/Mac and preserve your collection in high-quality WAV files.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'DJ-Ready Design'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Classic layout for ease of use and familiarity for DJs.`,
+              `Ideal for beginners or pros looking to integrate vinyl into digital DJ setups using DVS (Digital Vinyl System).`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Includes Everything You Need'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Comes complete with cartridge, headshell, slipmat, and USB cable—ready to use out of the box.`,
+            ]
+          },
+        ]
+      },
+      {
+        divID: 'info-tech-specs',
+        content: [
+          {
+            elementType: 'h1',
+            elementContent: 'Technical Specifications'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Drive Method: Direct Drive`,
+              `Motor Type: DC motor`,
+              `Platter: Aluminum, 332 mm diameter`,
+              `Speed: 33⅓, 45, 78 RPM`,
+              `USB Output: Yes (Type B)`,
+              `Signal-to-Noise Ratio: >50 dB`,
+              `Audio Output: RCA (Phono/Line switchable)`,
+              `Dimensions: 450 x 368 x 159 mm (17.72” x 14.49” x 6.26”)`,
+              `Weight: 10.7 kg (23.59 lbs)`,
+            ]
+          },
+        ]
+      },
+      {
+        divID: 'info-included-in-box',
+        content: [
+          {
+            elementType: 'h1',
+            elementContent: `What's in the box`
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Pioneer DJ PLX-500 Turntable`,
+              `Power Cable`,
+              `USB Cable`,
+              `RCA Audio Cable`,
+              `Cartridge & Headshell`,
+              `Slipmat`,
+              `Dust Cover with Record Stand`,
+              `User Manual`,
+            ]
+          },
+        ]
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: 'AlphaTheta DDJ‑GRV6',
+    price: 719,
+    type: 'controller',
+    digitalProduct: false,
+    photos: [
+      './Assets/ProductImages/DDJ-GRV6-1.png',
+      './Assets/ProductImages/DDJ-GRV6-2.png',
+      './Assets/ProductImages/DDJ-GRV6-3.png',
+      './Assets/ProductImages/DDJ-GRV6-4.png'
+    ],
+    description: [
+      {
+        divID: 'info-intro',
+        content: [
+          {
+            elementType: 'h1',
+            elementContent: 'Product Details'
+          },
+          {
+            elementType: 'p',
+            elementContent: `Transform your performance with the AlphaTheta DDJ‑GRV6, a cutting-edge 4‑channel DJ controller that brings studio-grade remixing power and club-standard feel to your fingertips. Designed for creative DJs, the GRV6 delivers unmatched flexibility with powerful tools like Groove Circuit and Stems FX, while retaining the layout and jog wheel ergonomics of flagship CDJ‑DJM setups.`
+          },
+          {
+            elementType: 'p',
+            elementContent: `Compatible with rekordbox and Serato DJ Pro (software license included), it lets you blend vinyl-style control with modern remix functions—from home sets and livestreams to club and festival stages.`
+          },
+        ]
+      },
+      {
+        divID: 'info-key-features',
+        content: [
+          {
+            elementType: 'h2',
+            elementContent: 'Key features'
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Groove Circuit - Live drum remix tool'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Drum Swap: instantly replace drum tracks with genre-spanning loops.`,
+              `Drum Roll/Trans: apply fills and transitions on the fly.`,
+              `Drum Release: create breakdowns and drops.`,
+              `Capture: extract drum stems for later use.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: `Stems FX (Serato DJ Pro only)`
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Isolate and process individual track elements (drums, bass, vocals, melody) with FX like Roll, Trans, Echo Out, and Delay.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Club‑Standard Layout & Jog Wheels'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Full-size (206 mm) jog wheels ideal for scratching`,
+              `8 performance pads per deck positioned above jogs—just like CDJ‑3000.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Smart Rotary Selector & Discover'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Multi-directional knob for library navigation (rekordbox).`,
+              `“Discover” button suggests tracks and playlists.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Beat FX & Sound Color FX'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Includes effects from the flagship DJM-A9 mixer—empowering dynamic sound shaping.`,
+            ]
+          },
+          {
+            elementType: 'h3',
+            elementContent: 'Multi-Platform Compatibility'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Works with rekordbox (Mac/Windows/iOS/Android), Serato DJ Pro, and Algoriddim Djay Pro.`,
+            ]
+          },
+        ]
+      },
+      {
+        divID: 'info-tech-specs',
+        content: [
+          {
+            elementType: 'h1',
+            elementContent: 'Technical Specifications'
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `Channels:	4 deck control`,
+              `Jog Wheels:	206 mm`,
+              `Performance Pads:	8 per deck, multi‑colour`,
+              `Inputs: 1 × Mic (¼″ TRS), 2 × Headphones (¼″ + 3.5 mm)`,
+              `Outputs: 2 × Master outputs (¼″ TRS and RCA), 1 × Booth (RCA)`,
+              `USB Connectivity:	2 × USB‑C`,
+              `Size:	711.4 × 375.9 × 75.7 mm`,
+              `Weight: 4.6 kg`,
+              `Audio Quality: 24‑bit/44.1 kHz, frequency response 20 Hz–20 kHz, S/N ratio ~104 dB, THD 0.003 %`,
+              `Power: USB‑powered or 9 V DC adapter`,
+            ]
+          },
+        ]
+      },
+      {
+        divID: 'info-included-in-box',
+        content: [
+          {
+            elementType: 'h1',
+            elementContent: `What's in the box`
+          },
+          {
+            elementType: 'ul',
+            listContent: [
+              `DDJ‑GRV6 DJ Controller`,
+              `USB‑C Cable`,
+              `Overlay sheet for Stems FX mapping`,
+              `Quick Start Guide`,
+              `Warranty Card`,
+            ]
+          },
+        ]
+      },
+    ]
+  },
 ]
 
 // ---------------------- Functions --------------------------

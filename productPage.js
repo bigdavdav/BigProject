@@ -32,6 +32,19 @@ const productInformation = document.getElementById('product-information')
 
 // --------------------- Functions ---------------------------
 
+function handleChangingImage(targetImage) {
+  const currentSelectedImage = document.getElementsByClassName("selected")[0]
+  
+  currentSelectedImage.classList.toggle("selected")
+  targetImage.classList.toggle("selected")
+}
+
+function handleApplyingImage(targetImageTag) {
+  const newImageURL = targetImageTag.getAttribute("src")
+  
+  mainDisplayImage.setAttribute("src", newImageURL)
+}
+
 function findingExistingProductListing(list, id) {
   for ( let i = 0; i < list.length; i++ ) {
     if ( list[i].itemID == id ) {
@@ -64,6 +77,14 @@ function addToCart(itemAmountToAdd, id) {
 }
 
 // ---------- Adding event listeners to buttons --------------
+
+// image list event listeners
+for ( let i = 0; i < imageListItems.length; i++ ) {
+  imageListItems[i].addEventListener("click", () => {
+    handleChangingImage(event.target.parentElement)
+    handleApplyingImage(event.target)
+  })
+}
 
 // item amount event listeners
 plusButton.addEventListener("click", () => {

@@ -20,7 +20,6 @@ const dbUserCheck = document.getElementById("dbCheckMessage")
 const submitButton = document.getElementById("submit-button")
   
 // ---------------- Creating DB User Functions --------------------
-// Not Functioning
 
 function dbAddUser(name, email, password) {
   const userData = new Object({
@@ -49,17 +48,30 @@ function dbAddUser(name, email, password) {
 function dbLoginDetailValidation() {
   const emailInput = userEmail.value
   const passwordInput = userPassword.value
-
+  let validity = false
+  
   for ( i = 0; i < users.length; i++ ) {
     if ( emailInput == users[i].userEmail && passwordInput == users[i].userPassword ) {
-      if ( dbUserCheck.classList.contains("hidden") == false ) {
-        dbUserCheck.classList.toggle("hidden")
-      }
+      validity = true
     }
   }
 
-  event.preventDefault()
+  if ( validity == false ) {
+    if ( dbUserCheck.classList.contains("hidden") == true ) {
+      dbUserCheck.classList.toggle("hidden")
+    }
+  } else {
+    window.location.href = "./home.html"
+  }
 }
+
+// ---------------------- Event Listeners --------------------------
+
+logInForm.addEventListener("submit", () => {
+  event.preventDefault()
+
+  dbLoginDetailValidation()
+})
 
 signUpForm.addEventListener("submit", () => {
   const userNameInput = userName.value
