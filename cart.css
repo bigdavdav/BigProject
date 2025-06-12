@@ -1,5 +1,5 @@
 #cart-container {
-  margin: 64px;
+  margin: 128px 64px;
 }
 
 #cart-container h1 {
@@ -58,6 +58,12 @@
 
 #cart-table tbody tr td + td {
   border-left: 2px solid var(--black);
+}
+
+#cart-table tbody tr td:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #cart-table tbody tr td:last-of-type button {
