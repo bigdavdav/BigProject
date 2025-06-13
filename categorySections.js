@@ -11,6 +11,8 @@ const categoryProductList = [
   [
     getProduct(0),
     getProduct(1),
+    getProduct(2),
+    getProduct(3),
   ],
   [
     getProduct(1),
