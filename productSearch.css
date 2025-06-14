@@ -55,25 +55,6 @@
   gap: 32px;
 }
 
-/* .item-container {
-  margin-top: 16px;
-  color: var(--black);
-}
-
-.product-image {
-  padding: 30px;
-  width: 300px;
-  height: 300px;
-  
-  object-fit: contain;
-  background: var(--neutral-100);
-  border-radius: 8px;
-}
-
-.item-container h3 {
-  margin-top: 16px;
-} */
-
 .hidden {
   display: none;
 }
