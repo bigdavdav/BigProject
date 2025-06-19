@@ -20,3 +20,5 @@ If you do want to run this code on your machine, you can:
   ```
     https://bigdavdav.github.io/BigProject/index.html
   ```
+
+Please do enjoy looking through the website as much as I enjoyed making it!
